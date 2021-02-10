@@ -10,6 +10,19 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
  */
 
  var canGetEqualCookies = function(cookies, extraCookies) {
-     return (extraCookies%cookies.length) == 0;
+        var balanceCookies = 0;
+        const mostCookiesEaten = Math.max(cookies);
+        for(var i = 0; i < cookies.length; i++){
+                const curCookiesEaten = cookies[i];
+                balanceCookies += mostCookiesEaten - curCookiesEaten;
+        }
+        if(balanceCookies === extraCookies){
+                return true;
+        }else if(balanceCookies < extraCookies){
+                const leftOvers = extraCookies - balanceCookies
+                return (cookies.length % leftOvers) === 0;
+        }else{
+                return false;
+        }
     
  };
