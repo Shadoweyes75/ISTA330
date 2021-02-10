@@ -7,10 +7,13 @@ For example given the input array [5, 6, 1], the running sum is
 
 var runningSum = function(input) {
    var nums = []
+   for(var x = 0; x < input.length; x++){
+      nums.push(0);
+   }
    let i = 0;
    for(var x = 0; x < input.length; x++){
       i += input[x];
-      nums.push(i);
+      nums[x] = i;
    }
    return nums;
 };
