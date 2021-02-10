@@ -20,7 +20,7 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
                 return true;
         }else if(balanceCookies < extraCookies){
                 const leftOvers = extraCookies - balanceCookies
-                return (cookies.length % leftOvers) === 0;
+                return (cookies.length % leftOvers) == 0;
         }else{
                 return false;
         }
