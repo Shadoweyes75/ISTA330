@@ -16,7 +16,6 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
                 const curCookiesEaten = cookies[i];
                 balanceCookies += mostCookiesEaten - curCookiesEaten;
         }
-        return typeof(balanceCookies);
         if(balanceCookies == extraCookies){
                 return true;
         }else if(balanceCookies < extraCookies){
