@@ -17,5 +17,5 @@ var suffleString = function(input, shuffleIndices) {
         delete shuffleMin[indexMin];
         ret.push(stringArray[indexMin]);
     }
-    return ret;
+    return ret.join("");
 };
