@@ -25,7 +25,7 @@ var biggerAndEven = function(input) {
 
 function rev(array){
     var revArray = []
-    for(var i = 0; i < array.length; i++){
+    for(var i = array.length-1; i >= 0; i--){
         revArray.push(array[i]);
     }
     return revArray;
