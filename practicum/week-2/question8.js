@@ -8,5 +8,17 @@ output: [1, 0, 1, 2]
 */
 
 var biggerAndEven = function(input) {
-
+    var bigEven = [];
+    var curBigger = 0;
+    for(var i = 0; i < input.length; i++){
+        curBigger = 0;
+        const current = input[i];
+        for(var x = 0; x < input.length; x++){
+            if(input[x] > input[i] && (input[x]%2 ==0)){
+                curBigger++;
+            }
+        }
+        bigEven.push(curBigger);
+    }
+    return bigEven.reverse();
 };
