@@ -20,5 +20,6 @@ var biggerAndEven = function(input) {
         }
         bigEven.push(curBigger);
     }
-    return bigEven.reverse();
+    bigEven = bigEven.reverse();
+    return bigEven;
 };
