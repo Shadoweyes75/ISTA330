@@ -6,5 +6,6 @@ output: 3
 */
 
 var median = function(input) {
-
+    input.sort(function(a, b){return a-b});
+    return input;
 };
