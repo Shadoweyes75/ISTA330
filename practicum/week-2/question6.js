@@ -10,7 +10,7 @@ var median = function(input) {
     if(input.length % 2 != 0){
         return input[Math.ceil(input.length/2)-1]
     }else{
-        var avg = input[Math.ceil(input.length)-1] + input[Math.floor(input.length)-1];
+        var avg = input[input.length/2] + input[input.length/2-1];
         return avg;
     }
 };
