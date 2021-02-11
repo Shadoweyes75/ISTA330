@@ -19,10 +19,10 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
         if(balanceCookies === extraCookies){
                 return true;
         }else if(balanceCookies < extraCookies){
-                return 'Hello';
                 const leftOvers = extraCookies - balanceCookies;
                 return (cookies.length % leftOvers) === 0;
         }else{
+                return 1;
                 return false;
         }
     
