@@ -13,6 +13,7 @@ var numberOfOrderedPairs = function(input) {
     for(var i = 0; i < input.lengt-1; i++){
         for(var x = i+1; x < input.length; x++){
             if(input[i] < input[x]){
+                return "hello";
                 orderedPairs++;
             }
         }
