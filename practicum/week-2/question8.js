@@ -20,6 +20,13 @@ var biggerAndEven = function(input) {
         }
         bigEven.push(curBigger);
     }
-    bigEven = bigEven.reverse();
-    return bigEven;
+    return rev(bigEven);
 };
+
+function rev(array){
+    var revArray = []
+    for(var i = array.length-1; i >= 0; i--){
+        revArray.push(array[i]);
+    }
+    return revArray;
+}
