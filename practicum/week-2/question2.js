@@ -22,7 +22,7 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
                 const leftOvers = extraCookies - balanceCookies;
                 return (cookies.length % leftOvers) === 0;
         }else{
-                return 1;
+                return [balanceCookies, extraCookies];
                 return false;
         }
     
