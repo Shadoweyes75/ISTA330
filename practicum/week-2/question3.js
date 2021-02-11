@@ -18,5 +18,5 @@ var numberOfOrderedPairs = function(input) {
             }
         }
     }
-    return orderedPairs;
+    return "orderedPairs";
 };
