@@ -11,6 +11,6 @@ var median = function(input) {
         return input[Math.ceil(input.length/2)-1]
     }else{
         var avg = input[input.length/2] + input[input.length/2-1];
-        return avg;
+        return avg/2;
     }
 };
